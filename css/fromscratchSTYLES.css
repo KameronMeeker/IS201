@@ -1,0 +1,117 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
+/* Basic Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: #ffee0025;
+}
+
+/* Navigation Styling */
+.navbar {
+    background-color: ; /* Semi-transparent black for better visibility */
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    display: none; /* Hide toggler in large views */
+}
+
+.navbar-brand {
+    font-family: 'Lora', serif;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex; /* Uses flexbox to layout nav items in a row */
+    justify-content: center; /* Center aligns the nav items horizontally */
+    flex-wrap: nowrap; /* Prevents wrapping of nav items */
+    list-style-type: none;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem;
+    color: black;
+    padding: 0 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #404040;
+}
+
+/* Header Styling */
+.masthead {
+    background-image: url('assets/img/post-bg.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -450px;
+    color: black;
+    height: 30vh; /* Full screen height */
+    display: flex;
+    align-items: center; /* Aligns content vertically center */
+    justify-content: center; /* Aligns content horizontally center */
+}
+
+.post-heading {
+    text-align: center;
+}
+
+.post-heading h1 {
+    padding-top: px;
+    font-size: 2.8rem;
+}
+
+.post-heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Smaller font size for smaller screens */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show toggler in smaller views */
+        margin: 0 auto; /* Center the toggle button */
+    }
+}
+
+
+
+
+
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 900px;
+  }
+}

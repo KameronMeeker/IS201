@@ -10672,7 +10672,8 @@ header.masthead {
   margin-bottom: 3rem;
   padding-top: calc(8rem + 57px);
   padding-bottom: 8rem;
-  background: no-repeat center center;
+  background: no-repeat center top;
+  background-position-y: -300px;
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
